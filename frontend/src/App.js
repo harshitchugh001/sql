@@ -6,6 +6,8 @@ import {
   Route,
 } from 'react-router-dom';
 import Home from './components/Home';
+import Surveys from './components/Surveys';
+import SurveyDetail from './components/SurveyDetail';
 
 
 function App() {
@@ -16,8 +18,9 @@ function App() {
 
           <Routes>
             <Route key="Home" path='/' exact element={<Home></Home>} />
-            {/* <Route path='/userpost' exact element={<UserPost></UserPost>}></Route>
-            <Route path='/sample' exact element={<Sample></Sample>}></Route> */}
+            <Route path='/userpost' exact element={<Surveys></Surveys>}></Route>
+            {/* <Route path='/sample' exact element={<Sample></Sample>}></Route> */}
+            <Route path="/test/:id" element={<SurveyDetail />} />
             <Route></Route>
           </Routes>
         </div>
