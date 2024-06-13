@@ -8,6 +8,7 @@ import {
 import Home from './components/Home';
 import Surveys from './components/Surveys';
 import SurveyDetail from './components/SurveyDetail';
+import Result from './components/Result';
 
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
             <Route path='/userpost' exact element={<Surveys></Surveys>}></Route>
             {/* <Route path='/sample' exact element={<Sample></Sample>}></Route> */}
             <Route path="/test/:id" element={<SurveyDetail />} />
+            <Route path="/result/:id" element={<Result></Result>} />
             <Route></Route>
           </Routes>
         </div>

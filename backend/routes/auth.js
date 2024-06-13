@@ -9,6 +9,8 @@ const {
 const {
     getsurvey,
     getquestionbysurvey,
+    nextquestion,
+    result
 }=require("../controllers/surveys");
 
 
@@ -18,6 +20,11 @@ router.post('/signin',  signin);
 router.get('/surveys', getsurvey);
 
 router.post(`/getquestionbysurvey`, getquestionbysurvey);
+
+router.post('/nextquestion',nextquestion);
+
+
+router.post('/result',result)
 
 
 
